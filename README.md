@@ -1,6 +1,6 @@
 # AD985x-Utility for Raspberry Pi
 
-![](D:\GitHub\AD985x-Utility\RPi-driving-AD9850&51.jpg)\
+![](https://github.com/Bevedel/AD985x-Utility/blob/main/RPi-driving-AD9850%2651.jpg)\
 Test set up\
 \
 An interactve utility for the AD9850 and AD9851 VCO-modules written in Python.\
