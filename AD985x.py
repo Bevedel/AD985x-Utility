@@ -226,18 +226,18 @@ class parse():  # parse and execute user commands
         print("""
    Command letters may be upper or lower case
    -----------------------------------------
-   - a: command prefix, xqt command once for VCO A - example B?af 1000
-   - b: command prefix, xqt command once for VCO B - example A?bf 1000
-   - e: exchange VCO's A <=> B
+   - a: VCO A prefix, xqt command once for VCO A - example B?af 1000
+   - b: VCO B prefix, xqt command once for VCO B - example A?bf 1000
+   - e: change default VCO (VCO A <=> VCO B)
    - f: frequency: f freq# or freq#[k-kHz, m-mHz, c-1/100Hz] - examples: f100k ; 1m
    - s: sweep freq: s start freq, end freq, delta freq - example: s 1000 1m 100k
    - l: log (exp) sweep: l start freq, end freq, number of steps - l 20 20k 20
-   - m: set multiplier: (AD9851 only, may harm AD9850!): m+ / m-
+   - m: set/reset frequency multiplier: (AD9851 only, may harm AD9850!): m+ / m-
    - p: set phase shift (0..31 X 11.25 degrees): p number[0..31] - example: p 23
-   - i: set idle (power) mode: i+ / i-
-   - r: reset frequency generator AND clears register
-   - w: write register (restore register setting)
-   - c: show current config settings
+   - i: set/reset idle (power) mode: i+ / i-
+   - r: reset frequency generator AND clears VCO-register
+   - w: write register (restore VCO register value)
+   - c: show current configuration settings
    - q: quit program
    - h: This help function: h\n""")
         return True
